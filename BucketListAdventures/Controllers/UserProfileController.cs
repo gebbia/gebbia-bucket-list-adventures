@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BucketListAdventures.Controllers
 {
+    [Authorize]
     public class UserProfileController : Controller
     {
         private readonly IUserProfileRepository _repository;

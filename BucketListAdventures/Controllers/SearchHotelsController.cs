@@ -5,10 +5,11 @@ using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 using System.Net;
 using Newtonsoft.Json;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace BucketListAdventures.Controllers
 {
+    [Authorize]
     public class SearchHotelsController : Controller
     {
 

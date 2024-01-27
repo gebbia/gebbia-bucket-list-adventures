@@ -23,6 +23,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BucketListAdventures.Controllers
 {
+    [Authorize]
     public class BucketListController : Controller
     {
         static private List<Destination> Destinations = new List<Destination>();

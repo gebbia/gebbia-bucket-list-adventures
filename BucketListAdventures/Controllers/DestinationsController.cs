@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using BucketListAdventures.Data;
 using BucketListAdventures.Models;
 using BucketListAdventures.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace BucketListAdventures.Controllers
 {
+    [Authorize]
     public class DestinationsController : Controller
     {
         private ApplicationDbContext context;

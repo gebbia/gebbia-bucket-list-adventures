@@ -51,6 +51,8 @@ namespace BucketListAdventures.Controllers
         }
         [HttpGet]
         [Route("/home/navigate")]
+
+        [Authorize]
         public IActionResult Navigate()
         {
             SearchViewModel searchViewModel = new();
